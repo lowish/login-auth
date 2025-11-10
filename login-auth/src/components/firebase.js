@@ -7,7 +7,7 @@ import { getAuth, GoogleAuthProvider, sendPasswordResetEmail } from 'firebase/au
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC-PC5EHbi8ED1BteBVTmMoLIIjBfmRlB8",
-  authDomain: "login-auth-2f24a.firebaseapp.com",
+  authDomain: "polite-banoffee-c4bca1.netlify.app",
   projectId: "login-auth-2f24a",
   storageBucket: "login-auth-2f24a.firebasestorage.app",
   messagingSenderId: "785058930699",
