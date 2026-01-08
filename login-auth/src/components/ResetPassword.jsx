@@ -10,7 +10,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import React, { useEffect, useMemo, useState } from "react"
-import { auth } from "@/components/firebase"
+import { auth } from "@/firebase/firebase"
 import { confirmPasswordReset, verifyPasswordResetCode } from "firebase/auth"
 
 export default function ResetPassword({ onDone }) {

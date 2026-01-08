@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import React, { useState } from "react"
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
-import { auth } from "@/components/firebase"
+import { auth } from "@/firebase/firebase"
 
 export default function Signup({ onBack }) {
   const [email, setEmail] = useState("")

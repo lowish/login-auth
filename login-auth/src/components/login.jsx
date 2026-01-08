@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import React, { useState } from "react"
 import { signInWithEmailAndPassword, signInWithPopup, sendPasswordResetEmail } from "firebase/auth"
-import { auth, googleProvider } from "@/components/firebase"
+import { auth, googleProvider } from "@/firebase/firebase"
 
 export function CardDemo({ onShowSignup, onLoginSuccess }) {
   const [email, setEmail] = useState("")
