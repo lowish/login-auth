@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd login-auth && npm install && npm run build",
+  "outputDirectory": "login-auth/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
