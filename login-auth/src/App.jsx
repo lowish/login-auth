@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-2">
         {hasReset ? (
           <ResetPassword onDone={() => {
             // Clear query params and go back to login view
@@ -42,12 +42,12 @@ function App() {
         )}
         
         {!loggedIn && (
-          <div className="flex items-center gap-3 mt-2">
+          <div className="flex items-center gap-2">
             <ModeToggle />
             <Button 
               variant="outline" 
               size="icon"
-              onClick={() => window.open("https://linkedin.com/in/lowish", "_blank")}
+              onClick={() => window.open("https://www.linkedin.com/in/pwtandev/", "_blank")}
               aria-label="LinkedIn profile"
             >
               <svg
