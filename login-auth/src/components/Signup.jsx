@@ -38,29 +38,25 @@ export default function Signup({ onBack }) {
     }
   }
   return (
-    <Card className="w-full max-w-sm">
+    <Card className="w-full max-w-sm max-h-[95vh] overflow-y-auto">
       <CardHeader>
-        <p className="text-sm text-center mt-2">
-        <CardTitle>Create an account</CardTitle>
-        </p>
-        <p className="text-sm text-center mt-2 p-2">
-        <CardDescription>
+        <CardTitle className="text-center mt-2">Create an account</CardTitle>
+        <CardDescription className="text-center mt-2">
           Enter your details to sign up
         </CardDescription>
-        </p>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col gap-6">
-            <div className="grid gap-2">
+            <div className="grid gap-2 text-left">
               <Label htmlFor="name">Name</Label>
               <Input id="name" type="text" placeholder="Prince Tan" required value={name} onChange={(e) => setName(e.target.value)} />
             </div>
-            <div className="grid gap-2">
+            <div className="grid gap-2 text-left">
               <Label htmlFor="email">Email</Label>
               <Input id="email" type="email" placeholder="lowishxx@example.com" required value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
-            <div className="grid gap-2">
+            <div className="grid gap-2 text-left">
               <Label htmlFor="password">Password</Label>
               <Input id="password" type="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
