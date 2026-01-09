@@ -66,11 +66,11 @@ export default function Signup({ onBack }) {
           </div>
         </form>
       </CardContent>
-      <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full" disabled={isSubmitting} onClick={handleSubmit}>
+      <CardFooter className="flex-col gap-4">
+        <Button type="submit" className="w-full bg-slate-900 hover:bg-slate-800 text-white h-11" disabled={isSubmitting} onClick={handleSubmit}>
           {isSubmitting ? "Creating..." : "Create account"}
         </Button>
-        <Button variant="outline" className="w-full" onClick={onBack}>Back</Button>
+        <Button variant="outline" className="w-full text-slate-900 border-gray-300 hover:bg-gray-50 h-10" onClick={onBack}>Back</Button>
       </CardFooter>
     </Card>
   )
